@@ -1,0 +1,40 @@
+.filter {
+  margin: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+label {
+  box-sizing: border-box;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.col-75 {
+  margin-right: 10%;
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  button {
+    font-size: 16px;
+  }
+}
